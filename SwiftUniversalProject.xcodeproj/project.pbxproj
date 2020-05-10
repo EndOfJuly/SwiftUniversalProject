@@ -10,6 +10,7 @@
 		30056161F668199827F0C935 /* Pods_SwiftUniversalProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F26F028BB66274E29ED3289 /* Pods_SwiftUniversalProjectTests.framework */; };
 		3A31173A7E86B2B6C701FF6B /* Pods_SwiftUniversalProject_SwiftUniversalProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4436CA895A6A5F96F55C196A /* Pods_SwiftUniversalProject_SwiftUniversalProjectUITests.framework */; };
 		4528FA6EE3CE74068EE27AC1 /* Pods_SwiftUniversalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */; };
+		E33F4834246861AF00E9B8B5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F4833246861AF00E9B8B5 /* API.swift */; };
 		E34882022468074B00E90511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882012468074B00E90511 /* AppDelegate.swift */; };
 		E34882042468074B00E90511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882032468074B00E90511 /* SceneDelegate.swift */; };
 		E34882062468074B00E90511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882052468074B00E90511 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUniversalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39917CB073CBD5144699194 /* Pods-SwiftUniversalProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFFBBCE618ABF2D017D0375C /* Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E33F4833246861AF00E9B8B5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E34881FE2468074B00E90511 /* SwiftUniversalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUniversalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34882012468074B00E90511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E34882032468074B00E90511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				E3BC2CCC2468526D00E1608C /* New Group */,
-				E3BC2CCB246851D100E1608C /* Const */,
+				E3BC2CCB246851D100E1608C /* Global */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -234,11 +236,12 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		E3BC2CCB246851D100E1608C /* Const */ = {
+		E3BC2CCB246851D100E1608C /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				E33F4833246861AF00E9B8B5 /* API.swift */,
 			);
-			path = Const;
+			path = Global;
 			sourceTree = "<group>";
 		};
 		E3BC2CCC2468526D00E1608C /* New Group */ = {
@@ -489,6 +492,7 @@
 			files = (
 				E34882062468074B00E90511 /* ViewController.swift in Sources */,
 				E34882022468074B00E90511 /* AppDelegate.swift in Sources */,
+				E33F4834246861AF00E9B8B5 /* API.swift in Sources */,
 				E34882042468074B00E90511 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
