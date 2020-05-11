@@ -12,13 +12,15 @@
 		4528FA6EE3CE74068EE27AC1 /* Pods_SwiftUniversalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */; };
 		E33F4834246861AF00E9B8B5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F4833246861AF00E9B8B5 /* API.swift */; };
 		E34882022468074B00E90511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882012468074B00E90511 /* AppDelegate.swift */; };
-		E34882042468074B00E90511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882032468074B00E90511 /* SceneDelegate.swift */; };
 		E34882062468074B00E90511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882052468074B00E90511 /* ViewController.swift */; };
-		E34882092468074B00E90511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34882072468074B00E90511 /* Main.storyboard */; };
 		E348820B2468074C00E90511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E348820A2468074C00E90511 /* Assets.xcassets */; };
 		E348820E2468074C00E90511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E348820C2468074C00E90511 /* LaunchScreen.storyboard */; };
 		E34882192468074C00E90511 /* SwiftUniversalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882182468074C00E90511 /* SwiftUniversalProjectTests.swift */; };
 		E34882242468074D00E90511 /* SwiftUniversalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882232468074D00E90511 /* SwiftUniversalProjectUITests.swift */; };
+		E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */; };
+		E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */; };
+		E3D5E54C246998390099E4F6 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5E54B246998390099E4F6 /* Official.swift */; };
+		E3E6E94D24698B6B00030D59 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6E94C24698B6B00030D59 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +51,7 @@
 		E33F4833246861AF00E9B8B5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E34881FE2468074B00E90511 /* SwiftUniversalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUniversalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34882012468074B00E90511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E34882032468074B00E90511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E34882052468074B00E90511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E34882082468074B00E90511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E348820A2468074C00E90511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E348820D2468074C00E90511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E348820F2468074C00E90511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +61,10 @@
 		E348821F2468074D00E90511 /* SwiftUniversalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUniversalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34882232468074D00E90511 /* SwiftUniversalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUniversalProjectUITests.swift; sourceTree = "<group>"; };
 		E34882252468074D00E90511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E3D5E54B246998390099E4F6 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
+		E3E6E94C24698B6B00030D59 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		F5FDF3B20B802063B6F8FA5C /* Pods-SwiftUniversalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject/Pods-SwiftUniversalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA8D9534C47817A61570A7C /* Pods-SwiftUniversalProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,15 +145,14 @@
 		E34882002468074B00E90511 /* SwiftUniversalProject */ = {
 			isa = PBXGroup;
 			children = (
-				E348823824680B3A00E90511 /* Vendor */,
-				E348823724680B2E00E90511 /* Resource */,
-				E348823624680B2200E90511 /* Network */,
-				E348823524680B1200E90511 /* Modules */,
-				E348823424680B0800E90511 /* Main */,
-				E348823324680AFC00E90511 /* Expand */,
-				E348823224680AF000E90511 /* Customer */,
 				E348823124680AE400E90511 /* Base */,
-				E348820F2468074C00E90511 /* Info.plist */,
+				E348823224680AF000E90511 /* Customer */,
+				E348823424680B0800E90511 /* Main */,
+				E348823524680B1200E90511 /* Modules */,
+				E348823624680B2200E90511 /* Network */,
+				E348823324680AFC00E90511 /* Expand */,
+				E348823824680B3A00E90511 /* ThridParty */,
+				E348823724680B2E00E90511 /* Resource */,
 			);
 			path = SwiftUniversalProject;
 			sourceTree = "<group>";
@@ -175,6 +178,8 @@
 		E348823124680AE400E90511 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */,
+				E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -189,8 +194,7 @@
 		E348823324680AFC00E90511 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				E3BC2CCC2468526D00E1608C /* New Group */,
-				E3BC2CCB246851D100E1608C /* Global */,
+				E3ADA8102469B455004DEE39 /* Global */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -199,9 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				E34882012468074B00E90511 /* AppDelegate.swift */,
-				E34882032468074B00E90511 /* SceneDelegate.swift */,
-				E34882052468074B00E90511 /* ViewController.swift */,
-				E34882072468074B00E90511 /* Main.storyboard */,
 				E348820C2468074C00E90511 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -210,6 +211,7 @@
 		E348823524680B1200E90511 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E34882052468074B00E90511 /* ViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -224,31 +226,27 @@
 		E348823724680B2E00E90511 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				E348820F2468074C00E90511 /* Info.plist */,
 				E348820A2468074C00E90511 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		E348823824680B3A00E90511 /* Vendor */ = {
+		E348823824680B3A00E90511 /* ThridParty */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Vendor;
+			path = ThridParty;
 			sourceTree = "<group>";
 		};
-		E3BC2CCB246851D100E1608C /* Global */ = {
+		E3ADA8102469B455004DEE39 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				E3E6E94C24698B6B00030D59 /* Global.swift */,
 				E33F4833246861AF00E9B8B5 /* API.swift */,
+				E3D5E54B246998390099E4F6 /* Official.swift */,
 			);
 			path = Global;
-			sourceTree = "<group>";
-		};
-		E3BC2CCC2468526D00E1608C /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +360,6 @@
 			files = (
 				E348820E2468074C00E90511 /* LaunchScreen.storyboard in Resources */,
 				E348820B2468074C00E90511 /* Assets.xcassets in Resources */,
-				E34882092468074B00E90511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,9 +488,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E34882062468074B00E90511 /* ViewController.swift in Sources */,
+				E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */,
 				E34882022468074B00E90511 /* AppDelegate.swift in Sources */,
 				E33F4834246861AF00E9B8B5 /* API.swift in Sources */,
-				E34882042468074B00E90511 /* SceneDelegate.swift in Sources */,
+				E3E6E94D24698B6B00030D59 /* Global.swift in Sources */,
+				E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */,
+				E3D5E54C246998390099E4F6 /* Official.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,14 +529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E34882072468074B00E90511 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E34882082468074B00E90511 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E348820C2468074C00E90511 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -669,7 +661,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F22LXBU3ZA;
-				INFOPLIST_FILE = SwiftUniversalProject/Info.plist;
+				INFOPLIST_FILE = SwiftUniversalProject/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.SwiftUniversalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -688,7 +681,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F22LXBU3ZA;
-				INFOPLIST_FILE = SwiftUniversalProject/Info.plist;
+				INFOPLIST_FILE = SwiftUniversalProject/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,7 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.SwiftUniversalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
