@@ -9,7 +9,6 @@
 import UIKit
 
 class BaseTabBarController: UITabBarController {
-    var selectedIndex: NSInteger?
     
     
 

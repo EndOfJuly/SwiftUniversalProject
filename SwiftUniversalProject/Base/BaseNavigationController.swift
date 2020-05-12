@@ -63,6 +63,5 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
         popViewController(animated: true)
     }
     
-    push
     
 }

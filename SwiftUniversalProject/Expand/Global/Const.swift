@@ -11,24 +11,24 @@ import UIKit
 
 // MARK: - 常用宽高数据
 //导航栏高度
-let TFNavigationBar_h: CGFloat = 44.0
+let TFNavigationBarH: CGFloat = 44.0
 //状态栏高度
-let TFStatusBar_h = UIApplication.shared.statusBarFrame.height
+let TFStatusBarH = UIApplication.shared.statusBarFrame.height
 //状态栏+导航栏高度
-let TFNavigation_Status_h = TFNavigationBar_h + TFStatusBar_h
+let TFNavigationStatusH = TFNavigationBarH + TFStatusBarH
 
 //屏幕高
-let kScreen_height = UIScreen.main.bounds.height
+let kScreenHeight = UIScreen.main.bounds.height
 //屏幕宽
-let kScreen_width = UIScreen.main.bounds.width
+let kScreenWidth = UIScreen.main.bounds.width
 
 //tabbar高度
-let TFTabBar_h: CGFloat = 49
+let TFTabBarH: CGFloat = 49
 
 //宽比
-let kRatio_width = kScreen_width / 375.0
+let kRatioWidth = kScreenWidth / 375.0
 //高比
-let kRatio_height = kScreen_height / 812.0
+let kRatioHeight = kScreenHeight / 812.0
 
 
 
@@ -48,7 +48,7 @@ var TFBangHeight: CGFloat {
 
 /** 屏幕高减去导航高**/
 @available(iOS 11.0, *)
-let TFSafeAreaHeight = (kScreen_height - TFNavigation_Status_h - TFHomeAreaHeight!)
+let TFSafeAreaHeight = (kScreenHeight - TFNavigationStatusH - TFHomeAreaHeight!)
 
 
 

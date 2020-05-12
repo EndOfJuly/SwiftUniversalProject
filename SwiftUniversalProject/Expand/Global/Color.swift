@@ -21,6 +21,8 @@ func ColorFromRGB(rgbValue: UInt32) -> UIColor {
 
 let kWhiteColor = UIColor.white
 let kRedColor = UIColor.red
+let kBlueColor = UIColor.blue
+
 
 let testColor = ColorFromRGB(rgbValue: 0xFFD801)
 

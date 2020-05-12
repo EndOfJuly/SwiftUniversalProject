@@ -18,6 +18,7 @@
 		BD06DF8A246A7CC400872143 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD06DF89246A7CC400872143 /* Icons.xcassets */; };
 		BD06DF8D246A943800872143 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8C246A943800872143 /* ViewController4.swift */; };
 		BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */; };
+		E332A847246AEE9400EE2B75 /* TFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332A846246AEE9400EE2B75 /* TFTabBarController.swift */; };
 		E33F4834246861AF00E9B8B5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F4833246861AF00E9B8B5 /* API.swift */; };
 		E34882022468074B00E90511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882012468074B00E90511 /* AppDelegate.swift */; };
 		E34882062468074B00E90511 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882052468074B00E90511 /* ViewController1.swift */; };
@@ -64,6 +65,7 @@
 		BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFCustomButtonItem.swift; sourceTree = "<group>"; };
 		D39917CB073CBD5144699194 /* Pods-SwiftUniversalProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFFBBCE618ABF2D017D0375C /* Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E332A846246AEE9400EE2B75 /* TFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTabBarController.swift; sourceTree = "<group>"; };
 		E33F4833246861AF00E9B8B5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E34881FE2468074B00E90511 /* SwiftUniversalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUniversalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34882012468074B00E90511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */,
+				E332A846246AEE9400EE2B75 /* TFTabBarController.swift */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				E34882022468074B00E90511 /* AppDelegate.swift in Sources */,
 				E33F4834246861AF00E9B8B5 /* API.swift in Sources */,
 				E3E6E94D24698B6B00030D59 /* Const.swift in Sources */,
+				E332A847246AEE9400EE2B75 /* TFTabBarController.swift in Sources */,
 				BD06DF85246A777800872143 /* BaseTabBarController.swift in Sources */,
 				BD06DF82246A493300872143 /* TFNetwork.swift in Sources */,
 				BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */,
@@ -734,7 +738,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.SwiftUniversalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -754,7 +758,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.SwiftUniversalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

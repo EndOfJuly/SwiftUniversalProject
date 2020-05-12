@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController3 = BaseNavigationController.init(rootViewController: viewController3)
         
         
-        let tarbarController = BaseTabBarController.init()
+        let tarbarController = TFTabBarController.init()
         tarbarController.setViewControllers([navController1, navController2, navController3], animated: true)
         
         self.window?.rootViewController = tarbarController
