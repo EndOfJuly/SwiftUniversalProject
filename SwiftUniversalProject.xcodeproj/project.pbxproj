@@ -10,9 +10,17 @@
 		30056161F668199827F0C935 /* Pods_SwiftUniversalProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F26F028BB66274E29ED3289 /* Pods_SwiftUniversalProjectTests.framework */; };
 		3A31173A7E86B2B6C701FF6B /* Pods_SwiftUniversalProject_SwiftUniversalProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4436CA895A6A5F96F55C196A /* Pods_SwiftUniversalProject_SwiftUniversalProjectUITests.framework */; };
 		4528FA6EE3CE74068EE27AC1 /* Pods_SwiftUniversalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */; };
+		BD06DF7C246A44B500872143 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF7B246A44B500872143 /* Color.swift */; };
+		BD06DF80246A479300872143 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF7F246A479300872143 /* ViewController2.swift */; };
+		BD06DF82246A493300872143 /* TFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF81246A493300872143 /* TFNetwork.swift */; };
+		BD06DF85246A777800872143 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF84246A777800872143 /* BaseTabBarController.swift */; };
+		BD06DF88246A7A0000872143 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF87246A7A0000872143 /* ViewController3.swift */; };
+		BD06DF8A246A7CC400872143 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD06DF89246A7CC400872143 /* Icons.xcassets */; };
+		BD06DF8D246A943800872143 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8C246A943800872143 /* ViewController4.swift */; };
+		BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */; };
 		E33F4834246861AF00E9B8B5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F4833246861AF00E9B8B5 /* API.swift */; };
 		E34882022468074B00E90511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882012468074B00E90511 /* AppDelegate.swift */; };
-		E34882062468074B00E90511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882052468074B00E90511 /* ViewController.swift */; };
+		E34882062468074B00E90511 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882052468074B00E90511 /* ViewController1.swift */; };
 		E348820B2468074C00E90511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E348820A2468074C00E90511 /* Assets.xcassets */; };
 		E348820E2468074C00E90511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E348820C2468074C00E90511 /* LaunchScreen.storyboard */; };
 		E34882192468074C00E90511 /* SwiftUniversalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882182468074C00E90511 /* SwiftUniversalProjectTests.swift */; };
@@ -20,7 +28,7 @@
 		E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */; };
 		E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */; };
 		E3D5E54C246998390099E4F6 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5E54B246998390099E4F6 /* Official.swift */; };
-		E3E6E94D24698B6B00030D59 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6E94C24698B6B00030D59 /* Global.swift */; };
+		E3E6E94D24698B6B00030D59 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6E94C24698B6B00030D59 /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +54,20 @@
 		85A32E2BDD9195A52616486E /* Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F26F028BB66274E29ED3289 /* Pods_SwiftUniversalProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUniversalProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUniversalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD06DF7B246A44B500872143 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BD06DF7F246A479300872143 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BD06DF81246A493300872143 /* TFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TFNetwork.swift; path = Network/TFNetwork.swift; sourceTree = SOURCE_ROOT; };
+		BD06DF84246A777800872143 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		BD06DF87246A7A0000872143 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BD06DF89246A7CC400872143 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		BD06DF8C246A943800872143 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFCustomButtonItem.swift; sourceTree = "<group>"; };
 		D39917CB073CBD5144699194 /* Pods-SwiftUniversalProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFFBBCE618ABF2D017D0375C /* Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E33F4833246861AF00E9B8B5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E34881FE2468074B00E90511 /* SwiftUniversalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUniversalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34882012468074B00E90511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E34882052468074B00E90511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34882052468074B00E90511 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		E348820A2468074C00E90511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E348820D2468074C00E90511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E348820F2468074C00E90511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +80,7 @@
 		E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E3D5E54B246998390099E4F6 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
-		E3E6E94C24698B6B00030D59 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E3E6E94C24698B6B00030D59 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F5FDF3B20B802063B6F8FA5C /* Pods-SwiftUniversalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject/Pods-SwiftUniversalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA8D9534C47817A61570A7C /* Pods-SwiftUniversalProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +134,38 @@
 				FEA8D9534C47817A61570A7C /* Pods-SwiftUniversalProjectTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD06DF7D246A475C00872143 /* Module1 */ = {
+			isa = PBXGroup;
+			children = (
+				E34882052468074B00E90511 /* ViewController1.swift */,
+			);
+			path = Module1;
+			sourceTree = "<group>";
+		};
+		BD06DF7E246A476E00872143 /* Module2 */ = {
+			isa = PBXGroup;
+			children = (
+				BD06DF7F246A479300872143 /* ViewController2.swift */,
+			);
+			path = Module2;
+			sourceTree = "<group>";
+		};
+		BD06DF86246A79C900872143 /* Module3 */ = {
+			isa = PBXGroup;
+			children = (
+				BD06DF87246A7A0000872143 /* ViewController3.swift */,
+			);
+			path = Module3;
+			sourceTree = "<group>";
+		};
+		BD06DF8B246A93FB00872143 /* Module4 */ = {
+			isa = PBXGroup;
+			children = (
+				BD06DF8C246A943800872143 /* ViewController4.swift */,
+			);
+			path = Module4;
 			sourceTree = "<group>";
 		};
 		E34881F52468074B00E90511 = {
@@ -180,6 +228,7 @@
 			children = (
 				E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */,
 				E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */,
+				BD06DF84246A777800872143 /* BaseTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -187,6 +236,7 @@
 		E348823224680AF000E90511 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
+				BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -211,7 +261,10 @@
 		E348823524680B1200E90511 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E34882052468074B00E90511 /* ViewController.swift */,
+				BD06DF8B246A93FB00872143 /* Module4 */,
+				BD06DF7D246A475C00872143 /* Module1 */,
+				BD06DF7E246A476E00872143 /* Module2 */,
+				BD06DF86246A79C900872143 /* Module3 */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -219,6 +272,7 @@
 		E348823624680B2200E90511 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BD06DF81246A493300872143 /* TFNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -228,6 +282,7 @@
 			children = (
 				E348820F2468074C00E90511 /* Info.plist */,
 				E348820A2468074C00E90511 /* Assets.xcassets */,
+				BD06DF89246A7CC400872143 /* Icons.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -242,9 +297,10 @@
 		E3ADA8102469B455004DEE39 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				E3E6E94C24698B6B00030D59 /* Global.swift */,
+				E3E6E94C24698B6B00030D59 /* Const.swift */,
 				E33F4833246861AF00E9B8B5 /* API.swift */,
 				E3D5E54B246998390099E4F6 /* Official.swift */,
+				BD06DF7B246A44B500872143 /* Color.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -359,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E348820E2468074C00E90511 /* LaunchScreen.storyboard in Resources */,
+				BD06DF8A246A7CC400872143 /* Icons.xcassets in Resources */,
 				E348820B2468074C00E90511 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,12 +544,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E34882062468074B00E90511 /* ViewController.swift in Sources */,
+				E34882062468074B00E90511 /* ViewController1.swift in Sources */,
 				E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */,
+				BD06DF88246A7A0000872143 /* ViewController3.swift in Sources */,
+				BD06DF80246A479300872143 /* ViewController2.swift in Sources */,
 				E34882022468074B00E90511 /* AppDelegate.swift in Sources */,
 				E33F4834246861AF00E9B8B5 /* API.swift in Sources */,
-				E3E6E94D24698B6B00030D59 /* Global.swift in Sources */,
+				E3E6E94D24698B6B00030D59 /* Const.swift in Sources */,
+				BD06DF85246A777800872143 /* BaseTabBarController.swift in Sources */,
+				BD06DF82246A493300872143 /* TFNetwork.swift in Sources */,
+				BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */,
+				BD06DF7C246A44B500872143 /* Color.swift in Sources */,
 				E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */,
+				BD06DF8D246A943800872143 /* ViewController4.swift in Sources */,
 				E3D5E54C246998390099E4F6 /* Official.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

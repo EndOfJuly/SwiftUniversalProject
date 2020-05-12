@@ -15,20 +15,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window!.backgroundColor = UIColor.white
-        self.window!.makeKeyAndVisible()
+        //初始化window
+        self.initWindow()
         
         
-        let viewController = ViewController.init()
-        self.window?.rootViewController = viewController
         
         return true
     }
 
-    
+    //初始化window
+    func initWindow() {
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        self.window!.backgroundColor = UIColor.white
+        self.window!.makeKeyAndVisible()
+        
+        let viewController1 = ViewController1.init()
+        let viewController2 = ViewController2.init()
+        let viewController3 = ViewController3.init()
+        
+        let navController1 = BaseNavigationController.init(rootViewController: viewController1)
+        let navController2 = BaseNavigationController.init(rootViewController: viewController2)
+        let navController3 = BaseNavigationController.init(rootViewController: viewController3)
+        
+        
+        let tarbarController = BaseTabBarController.init()
+        tarbarController.setViewControllers([navController1, navController2, navController3], animated: true)
+        
+        self.window?.rootViewController = tarbarController
+    }
     
 
 }

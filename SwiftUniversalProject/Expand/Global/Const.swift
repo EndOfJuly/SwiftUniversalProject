@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// MARK: - 常用宽高数据
 //导航栏高度
 let TFNavigationBar_h: CGFloat = 44.0
 //状态栏高度
@@ -23,10 +25,10 @@ let kScreen_width = UIScreen.main.bounds.width
 //tabbar高度
 let TFTabBar_h: CGFloat = 49
 
-//高比
-let kRatio_height = kScreen_height / 667.0
 //宽比
 let kRatio_width = kScreen_width / 375.0
+//高比
+let kRatio_height = kScreen_height / 812.0
 
 
 
@@ -55,5 +57,7 @@ let TFControlEdge = 15.0
 let TFControlGap = 10.0
 let TFControlHeight = 20.0
 
+
+// MARK: - 
 
 

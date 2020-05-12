@@ -5,8 +5,6 @@
 //  Created by 张堂飞 on 2020/5/11.
 //  Copyright © 2020 张堂飞. All rights reserved.
 //
-import Foundation
-
 
 enum Env {
     //配置测试环境、预发布环境、生产环境
