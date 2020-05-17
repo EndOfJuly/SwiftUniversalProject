@@ -12,12 +12,15 @@
 		4528FA6EE3CE74068EE27AC1 /* Pods_SwiftUniversalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */; };
 		BD06DF7C246A44B500872143 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF7B246A44B500872143 /* Color.swift */; };
 		BD06DF80246A479300872143 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF7F246A479300872143 /* ViewController2.swift */; };
-		BD06DF82246A493300872143 /* TFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF81246A493300872143 /* TFNetwork.swift */; };
+		BD06DF82246A493300872143 /* TFRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF81246A493300872143 /* TFRequestManager.swift */; };
 		BD06DF85246A777800872143 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF84246A777800872143 /* BaseTabBarController.swift */; };
 		BD06DF88246A7A0000872143 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF87246A7A0000872143 /* ViewController3.swift */; };
 		BD06DF8A246A7CC400872143 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD06DF89246A7CC400872143 /* Icons.xcassets */; };
 		BD06DF8D246A943800872143 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8C246A943800872143 /* ViewController4.swift */; };
 		BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */; };
+		E32DCEE9246C310000722B42 /* AppDelegate+Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32DCEE8246C310000722B42 /* AppDelegate+Normal.swift */; };
+		E332A0F5246D93AF007445B8 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332A0F3246D93AF007445B8 /* UIView+Ext.swift */; };
+		E332A0F6246D93AF007445B8 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332A0F4246D93AF007445B8 /* UIImage+Ext.swift */; };
 		E332A847246AEE9400EE2B75 /* TFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332A846246AEE9400EE2B75 /* TFTabBarController.swift */; };
 		E33F4834246861AF00E9B8B5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F4833246861AF00E9B8B5 /* API.swift */; };
 		E34882022468074B00E90511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882012468074B00E90511 /* AppDelegate.swift */; };
@@ -28,6 +31,7 @@
 		E34882242468074D00E90511 /* SwiftUniversalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34882232468074D00E90511 /* SwiftUniversalProjectUITests.swift */; };
 		E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */; };
 		E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */; };
+		E3C029F62471950B00D8FC90 /* TFNetBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C029F52471950B00D8FC90 /* TFNetBaseModel.swift */; };
 		E3D5E54C246998390099E4F6 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5E54B246998390099E4F6 /* Official.swift */; };
 		E3E6E94D24698B6B00030D59 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6E94C24698B6B00030D59 /* Const.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +61,7 @@
 		8F5D58867B7BCA2C20D4B7D0 /* Pods_SwiftUniversalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUniversalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD06DF7B246A44B500872143 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BD06DF7F246A479300872143 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		BD06DF81246A493300872143 /* TFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TFNetwork.swift; path = Network/TFNetwork.swift; sourceTree = SOURCE_ROOT; };
+		BD06DF81246A493300872143 /* TFRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TFRequestManager.swift; path = Network/TFRequestManager.swift; sourceTree = SOURCE_ROOT; };
 		BD06DF84246A777800872143 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		BD06DF87246A7A0000872143 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		BD06DF89246A7CC400872143 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
@@ -65,6 +69,9 @@
 		BD06DF8E246A9B1A00872143 /* TFCustomButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFCustomButtonItem.swift; sourceTree = "<group>"; };
 		D39917CB073CBD5144699194 /* Pods-SwiftUniversalProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProjectTests/Pods-SwiftUniversalProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFFBBCE618ABF2D017D0375C /* Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests/Pods-SwiftUniversalProject-SwiftUniversalProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E32DCEE8246C310000722B42 /* AppDelegate+Normal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Normal.swift"; sourceTree = "<group>"; };
+		E332A0F3246D93AF007445B8 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		E332A0F4246D93AF007445B8 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		E332A846246AEE9400EE2B75 /* TFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTabBarController.swift; sourceTree = "<group>"; };
 		E33F4833246861AF00E9B8B5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E34881FE2468074B00E90511 /* SwiftUniversalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUniversalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +88,7 @@
 		E34882252468074D00E90511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3ADA80C2469A348004DEE39 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3ADA80E2469A8CF004DEE39 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E3C029F52471950B00D8FC90 /* TFNetBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFNetBaseModel.swift; sourceTree = "<group>"; };
 		E3D5E54B246998390099E4F6 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
 		E3E6E94C24698B6B00030D59 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F5FDF3B20B802063B6F8FA5C /* Pods-SwiftUniversalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUniversalProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUniversalProject/Pods-SwiftUniversalProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +178,15 @@
 			path = Module4;
 			sourceTree = "<group>";
 		};
+		E332A0F2246D9399007445B8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E332A0F4246D93AF007445B8 /* UIImage+Ext.swift */,
+				E332A0F3246D93AF007445B8 /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E34881F52468074B00E90511 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +264,7 @@
 		E348823324680AFC00E90511 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				E332A0F2246D9399007445B8 /* Extension */,
 				E3ADA8102469B455004DEE39 /* Global */,
 			);
 			path = Expand;
@@ -256,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				E34882012468074B00E90511 /* AppDelegate.swift */,
+				E32DCEE8246C310000722B42 /* AppDelegate+Normal.swift */,
 				E348820C2468074C00E90511 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -275,7 +294,8 @@
 		E348823624680B2200E90511 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BD06DF81246A493300872143 /* TFNetwork.swift */,
+				BD06DF81246A493300872143 /* TFRequestManager.swift */,
+				E3C029F52471950B00D8FC90 /* TFNetBaseModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -547,6 +567,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E332A0F5246D93AF007445B8 /* UIView+Ext.swift in Sources */,
+				E32DCEE9246C310000722B42 /* AppDelegate+Normal.swift in Sources */,
 				E34882062468074B00E90511 /* ViewController1.swift in Sources */,
 				E3ADA80D2469A348004DEE39 /* BaseNavigationController.swift in Sources */,
 				BD06DF88246A7A0000872143 /* ViewController3.swift in Sources */,
@@ -556,11 +578,13 @@
 				E3E6E94D24698B6B00030D59 /* Const.swift in Sources */,
 				E332A847246AEE9400EE2B75 /* TFTabBarController.swift in Sources */,
 				BD06DF85246A777800872143 /* BaseTabBarController.swift in Sources */,
-				BD06DF82246A493300872143 /* TFNetwork.swift in Sources */,
+				BD06DF82246A493300872143 /* TFRequestManager.swift in Sources */,
 				BD06DF8F246A9B1A00872143 /* TFCustomButtonItem.swift in Sources */,
 				BD06DF7C246A44B500872143 /* Color.swift in Sources */,
 				E3ADA80F2469A8CF004DEE39 /* BaseViewController.swift in Sources */,
+				E332A0F6246D93AF007445B8 /* UIImage+Ext.swift in Sources */,
 				BD06DF8D246A943800872143 /* ViewController4.swift in Sources */,
+				E3C029F62471950B00D8FC90 /* TFNetBaseModel.swift in Sources */,
 				E3D5E54C246998390099E4F6 /* Official.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

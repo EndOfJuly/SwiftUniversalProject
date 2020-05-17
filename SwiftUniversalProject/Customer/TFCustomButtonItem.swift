@@ -8,36 +8,26 @@
 
 import UIKit
 
-class TFCustomButtonItem: UIButton {
+class TFTabBarButtonItem: UIButton {
+    
+
     //item边长
-    private let itemWH = 40
+    private let itemWH: CGFloat = 40
     //字体大小
-    private let itemTitleFont = UIFont.systemFont(ofSize: 10)
+    private let itemTitleFont: UIFont = UIFont.systemFont(ofSize: 10)
     //角标背景图
-    private let badgeValueViewImageName = "badge"
+    private let badgeViewImageName: String = "badge"
     //角标背景图（带数字）
-    private let badgeValueViewImageNameMore = "badge_num"
-    private let badgeValueFont = UIFont.systemFont(ofSize: 12)
-    private let badgeValueColor = UIColor.white
-    private var badgeValueViewWH:CGFloat{
-        get{
-//            return CGFloat(itemWH) * 0.15 //如果只是红点提示，则返回此大小
-            return CGFloat(itemWH) * 0.45  //如果显示数字，则返回这个大小
-        }
-    }
-    private let KSImageScale:CGFloat = 1
-    
-    
+    private let badgeViewImageNameNum: String = "badge_num"
+    private let badgeFont = UIFont.systemFont(ofSize: 12)
+    private let badgeColor = UIColor.white
     
     // MARK - 角标
     lazy var badgeView: UIButton = {
-        let centerPoint = CGPoint(x: 30, y: 30)
-        
-        let badgeView = UIButton.init()
-        badgeView.center = centerPoint
-        badgeView.frame.size = CGSize(width: badgeValueViewWH, height: badgeValueViewWH)
-        badgeView.setBackgroundImage(UIImage.init(named: self.badgeValueViewImageName), for: UIControl.State.normal)
-        badgeView.setTitleColor(kWhiteColor, for: UIControl.State.normal)
+        let x:CGFloat = self.frame.size.width / 2 + 10
+        let y:CGFloat = 5
+        let badgeView = UIButton.init(frame: CGRect(x: x, y: y, width: 0, height: 0))
+        badgeView.setTitleColor(UIColor.white, for: UIControl.State.normal)
         badgeView.isHidden = true
         badgeView.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         badgeView.isUserInteractionEnabled = false
@@ -45,10 +35,13 @@ class TFCustomButtonItem: UIButton {
         return badgeView
     }()
     
-    
+    //初始化
     init(frame: CGRect, normalImageName: String, selectedImageName: String, title: String, normalTitleColor: UIColor ,selectedTitleColor: UIColor) {
         super.init(frame: frame)
         
+        self.isHighlighted = false
+        //图片
+        self.imageView?.contentMode = .center
         self.setImage(UIImage.init(named: normalImageName), for: .normal)
         self.setImage(UIImage.init(named: selectedImageName), for: .selected)
         
@@ -65,19 +58,14 @@ class TFCustomButtonItem: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    func setBadgeNum(badgeNum: Int) {
-        if badgeNum <= 0 {
-            self.badgeView.isHidden = true
-            return
+    //取消高亮状态
+    override var isHighlighted: Bool {
+        get {
+            return false
         }
-//        self.badgeView.isHidden = !(badgeNum > 0)
-        
-        let itemBadgeNumStr = (badgeNum > 99) ? "..." : "\(badgeNum)"
-        self.badgeView.setTitle(itemBadgeNumStr, for: .normal)
-        //拉伸图片
-        let img = UIImage.init(named: badgeValueViewImageName)?.resizableImage(withCapInsets: .zero)
-        self.setBackgroundImage(img, for: .normal)
+        set {
+            
+        }
     }
     
     //image位置
@@ -86,7 +74,56 @@ class TFCustomButtonItem: UIButton {
     }
     //title位置
     override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
-        return CGRect(x: 0, y: 15, width: contentRect.size.width/2, height: contentRect.size.height/2)
+        return CGRect(x: 0, y: 15, width: contentRect.size.width, height: contentRect.size.height)
     }
+    
+    
+}
 
+
+extension TFTabBarButtonItem {
+    // 设置红点角标
+    public func setBadge() {
+//        self.badgeViewWH = itemWH * 0.15
+        badgeView.isHidden = false
+        badgeView.frame.size = CGSize(width: itemWH * 0.15, height: itemWH * 0.15)
+        badgeView.setBackgroundImage(UIImage.init(named: self.badgeViewImageName), for: UIControl.State.normal)
+        
+    }
+    
+    // 设置数字角标 为0不显示
+    public func setBadgeNum(badgeNum: Int) {
+        self.badgeView.isHidden = !(badgeNum > 0)
+        if self.badgeView.isHidden { return }
+        
+        let itemBadgeNumStr = (badgeNum > 99) ? "..." : "\(badgeNum)"
+        self.badgeView.setTitle(itemBadgeNumStr, for: .normal)
+        
+        if badgeNum > 9 {
+            badgeView.frame.size = CGSize(width: itemWH * 0.4 + 4, height: itemWH * 0.4)
+            badgeView.setBackgroundImage(UIImage.resizableImage(imageName: badgeViewImageNameNum), for: .normal)
+        } else {
+            badgeView.frame.size = CGSize(width: itemWH * 0.4, height: itemWH * 0.4)
+            badgeView.setBackgroundImage(UIImage.init(named: self.badgeViewImageName), for: UIControl.State.normal)
+        }
+    }
+    
+    // 清除角标
+    public func cleanBadge() {
+        badgeView.isHidden = true
+    }
+    
+    // 设置item图片
+    public func setStatusImages(normal normalImageName:String, selected selectedImageName:String = "") {
+        self.setImage(UIImage.init(named: normalImageName), for: .normal)
+        self.setImage(UIImage.init(named: selectedImageName), for: .selected)
+    }
+    
+    // 设置item标题和颜色
+    public func setStatusTitle(title: String, normalColor: UIColor, selectedColor: UIColor) {
+        self.setTitle(title, for: .normal)
+        self.setTitleColor(normalColor, for: .normal)
+        self.setTitleColor(selectedColor, for: .selected)
+    }
+    
 }

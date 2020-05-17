@@ -8,6 +8,11 @@
 
 import UIKit
 
+//系统版本
+let version:NSString = UIDevice.current.systemVersion as NSString
+
+//appdelegate
+let shareAppdelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
 // MARK: - 常用宽高数据
 //导航栏高度

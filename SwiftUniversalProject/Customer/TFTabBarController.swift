@@ -9,9 +9,9 @@
 import UIKit
 
 class TFTabBarController: UITabBarController {
-
-    var currentSelectedIndex:NSInteger? //当前选中的button的index
-    var buttons = [TFCustomButtonItem]()
+    
+    var currentSelectedIndex: Int? //当前选中的button的index
+    var barItems = [TFTabBarButtonItem]()
     lazy var objectNavis:[UINavigationController] = {
         var navis = [UINavigationController]()
         navis = self.viewControllers as! [UINavigationController]
@@ -23,42 +23,47 @@ class TFTabBarController: UITabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
-         self.customTabBar()
+         self.initDefaultTabBar()
     }
     
-    func customTabBar(){
-        
-        //初始化TabBar上的Item数量和Item上的标题，图片等等
-        let normalImageArr = NSArray.init(array: ["course","course","usercenter"])
-        let selectedImageArray = NSArray.init(array: ["course_selected","course_selected","usercenter_selected"])
-        let titleArr = NSArray.init(array: ["首页","联系人","个人中心"])
-        let viewCount:Int = (self.viewControllers?.count)! > 5 ? 5:(self.viewControllers?.count)!
-        let _width: CGFloat = kScreenWidth / CGFloat(viewCount)
-        let _height: CGFloat = self.tabBar.frame.size.height
-        for i in 0 ..< (self.viewControllers?.count)!{
-            let btn:TFCustomButtonItem = TFCustomButtonItem.init(frame: CGRect(x: CGFloat(i) * _width, y: 0, width: _width, height: _height), normalImageName: normalImageArr[i] as! String, selectedImageName: selectedImageArray[i] as! String, title: titleArr[i] as! String, normalTitleColor: kRedColor, selectedTitleColor: kBlueColor)
-            btn.addTarget(self, action: #selector(selectedTab(_:)), for: UIControl.Event.touchUpInside)
-            btn.tag = i
-            self.buttons.append(btn)
-            self.tabBar.addSubview(btn)
-        }
-        //默认选中第一个页面
-        if self.buttons.count > 0 {
-             self.buttons[0].isSelected = true
-             self.selectedTab(self.buttons[0])
-        }
     
+    func initDefaultTabBar() {
+        if (nil == self.viewControllers || 0 == self.viewControllers?.count) { return }
+        
+        var controllersCount: Int = 0
+        //这边设置超过5个的部分不显示
+        controllersCount = (self.viewControllers?.count)! <= 5 ? (self.viewControllers?.count)! : 5
+        let defaultImageName = "default"
+        let defaultSelectedImageName = "default_selected"
+        let itemWidth = kScreenWidth / CGFloat(controllersCount)
+        let itemHeight = self.tabBar.frame.size.height
+        //循环创建默认的tabbaritem
+        for i in 0 ..< controllersCount {
+            let barItem = TFTabBarButtonItem.init(frame: CGRect(x: CGFloat(i) * itemWidth, y: 0, width: itemWidth, height: itemHeight), normalImageName: defaultImageName, selectedImageName: defaultSelectedImageName, title: "Module\(i+1)", normalTitleColor: UIColor.gray, selectedTitleColor: UIColor.red)
+            barItem.addTarget(self, action: #selector(selectedTab(_:)), for: .touchUpInside)
+            barItem.tag = i
+            self.barItems.append(barItem)
+            self.tabBar.addSubview(barItem)
+        }
+        self.barItems[0].isSelected = true
+        self.selectedTab(self.barItems[0])
+        
     }
     
     // MARK - 设置消息数量
-    //设置消息数
-    func setBadgeNumber(_ number:NSInteger,_ index:NSInteger){
-        let  buttonItem:TFCustomButtonItem = self.buttons[index]
+    func setBadgeNumber(_ number: Int,_ index: Int){
+        print(self.barItems.count)
+        let buttonItem:TFTabBarButtonItem = self.barItems[index]
         buttonItem.setBadgeNum(badgeNum: number)
     }
     
+    func setBadge(at index: Int) {
+        let buttonItem:TFTabBarButtonItem = self.barItems[index]
+        buttonItem.setBadge()
+    }
+    
     func pushToHome(){
-        for bt in self.buttons {
+        for bt in self.barItems {
             if bt.tag == 0 {
                 bt.isSelected = true
             }else{
@@ -76,7 +81,7 @@ class TFTabBarController: UITabBarController {
         if self.currentSelectedIndex == button.tag{
             return
         }
-        for bt in self.buttons{
+        for bt in self.barItems{
             if bt == button {
                 bt.isSelected = true
             }else{
@@ -86,15 +91,8 @@ class TFTabBarController: UITabBarController {
         self.currentSelectedIndex = button.tag
         self.selectedIndex = self.currentSelectedIndex!
         //选中一级界面
-        if self.selectedIndex != 0 && (self.viewControllers?.count)! > self.selectedIndex  {
-            /**
-             注意此处的跳转
-             由于系统的TabBarController上的viewCoutrollers 默认为继承的是UIViewController
-             所以，如果使用自定义的导航栏去加载ViewControllers作为TabBarControlelr的viewCoutrollers时
-             此处需要进行类型转换，从而顺利进行跳转。
-             */
-            if self.objectNavis.count > 0{
-                //此处需要将其转为具有导航功能的navigationController
+        if self.selectedIndex != 0 && (self.viewControllers?.count)! > self.selectedIndex {
+            if self.objectNavis.count > 0 {
                 (self.selectedViewController as! UINavigationController).popToRootViewController(animated: true)
             }
         }
