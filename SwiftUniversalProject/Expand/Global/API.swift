@@ -8,20 +8,23 @@
 
 enum Env {
     //配置测试环境、预发布环境、生产环境
-    case staging, canary, prod
+    case staging, canary, prod, personal
     
     var domain: String {
         switch self {
         case .staging: return "测试环境"
         case .canary: return "预发布环境"
         case .prod: return "生产环境"
+        case .personal: return "http://devmobile.zhuawawa.site/"
         }
     }
     
 }
 
 struct API {
-    static let currentEnv = Env.staging.domain
+    static let currentEnv = Env.personal.domain
+    
+    static let personalUrl = "\(currentEnv)/neckpets/getBlindBoxSeriesLitByTabType.json"
     
     static let loginUrl = "\(currentEnv)/登录"
     static let registerUrl = "\(currentEnv)/注册"

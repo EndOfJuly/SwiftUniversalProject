@@ -9,6 +9,7 @@ target 'SwiftUniversalProject' do
   pod 'Alamofire', '~> 4.9.1'
   pod 'SnapKit', '~> 4.2.0'
   pod 'SwiftyJSON', '~> 5.0.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
 
   # Pods for SwiftUniversalProject
 

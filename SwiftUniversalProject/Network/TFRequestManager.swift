@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import MBProgressHUD
 
 
 typealias successHandle = (_ responseObject: Dictionary<String, Any>?) -> Void
@@ -59,6 +60,11 @@ class TFRequestManager: NSObject {
             
         }
     }
+    
+    
+    
+    
+    
 }
 
 

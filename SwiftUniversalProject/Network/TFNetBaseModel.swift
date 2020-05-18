@@ -8,19 +8,7 @@
 
 import Foundation
 import SwiftyJSON
-/*
- "data": null,
-    "total": null,
-    "payload": null,
-    "boxInfos": null,
-    "storageEnough": null,
-    "openStrategy": null,
-    "success": false,
-    "resultDesc": "error:lack of param.please check the requestData.",
-    "resultCode": "10003",
-    "returnCode": "ERR_LACK_OF_PARAM",
-    "resultView": "缺少参数哟~~"
- */
+
 class TFNetBaseModel: NSObject {
     var data: Array<Any>?
     var total: Int
