@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-
+import MBProgressHUD
 
 
 class ViewController1: BaseViewController {
@@ -18,12 +17,11 @@ class ViewController1: BaseViewController {
         
         let params = ["requestData": "{\"userToken\":\"8ed7ddfde5ca37849b7c43591957d7fb73adc2a1\", \"pageNumber\": \"1\"}"]
         
-        
-        TFRequestManager.sharedManager.postRequest(url: API.personalUrl, params: params, success: { (responseObj) in
+        TFRequestManager.sharedManager.postRequest(url: API.personalTestUrl, params: params, success: { (responseModel) in
+            print("resultview \(responseModel.resultView)")
             
-            
-        }) { (error) in
-            print(error)
+        }) { (err) in
+            print(err.message)
         }
         
         

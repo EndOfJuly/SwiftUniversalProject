@@ -50,9 +50,8 @@ class TFTabBarController: UITabBarController {
         
     }
     
-    // MARK - 设置消息数量
+    // 设置消息数量
     func setBadgeNumber(_ number: Int,_ index: Int){
-        print(self.barItems.count)
         let buttonItem:TFTabBarButtonItem = self.barItems[index]
         buttonItem.setBadgeNum(badgeNum: number)
     }

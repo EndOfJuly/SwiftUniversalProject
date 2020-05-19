@@ -63,6 +63,4 @@ let TFControlGap = 10.0
 let TFControlHeight = 20.0
 
 
-// MARK: - 
-
-
+// MARK: -
