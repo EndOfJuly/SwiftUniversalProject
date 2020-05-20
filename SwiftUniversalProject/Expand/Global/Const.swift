@@ -8,11 +8,16 @@
 
 import UIKit
 
+// MARK: - 第三方的key、secret等
+// 极光推送
+let jPushAppKey = ""
+// Polyv
+
+
+// MARK: - 系统相关
 //系统版本
 let version:NSString = UIDevice.current.systemVersion as NSString
 
-//appdelegate
-let shareAppdelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
 // MARK: - 常用宽高数据
 //导航栏高度
@@ -62,5 +67,3 @@ let TFControlEdge = 15.0
 let TFControlGap = 10.0
 let TFControlHeight = 20.0
 
-
-// MARK: -

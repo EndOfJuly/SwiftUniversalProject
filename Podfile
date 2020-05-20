@@ -10,6 +10,8 @@ target 'SwiftUniversalProject' do
   pod 'SnapKit', '~> 4.2.0'
   pod 'SwiftyJSON', '~> 5.0.0'
   pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'JCore', '~> 2.2.5'
+  pod 'JPush', '~> 3.3.3'
 
   # Pods for SwiftUniversalProject
 
