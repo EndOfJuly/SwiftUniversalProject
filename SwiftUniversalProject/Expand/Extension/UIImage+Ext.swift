@@ -11,6 +11,7 @@ import UIKit
 extension UIImage {
     //拉伸图片
     class func resizableImage(imageName:String) -> UIImage{
+        if nil == UIImage.init(named: imageName) { return UIImage.init() }
         let sourceImage:UIImage = UIImage.init(named: imageName)!
         let w = sourceImage.size.width * 0.5
         let h = sourceImage.size.height * 0.5
